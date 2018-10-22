@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 0;
+}
+
+body {
+    padding: 10px;
+}
+
+#testTask {
+    position: relative;
+    display: inline-block;
+    padding:  56px;
+}
+
+#plus_bottom, #plus_right {
+    background-color: #F3A500;
+
+}
+
+#minus_left, #minus_top {
+    background-color: #B20000;
+    font-size: 22px;
+    visibility: hidden;
+}
+
+.button {
+    position: absolute;
+    border: none;
+    text-decoration: none;
+    height: 54px;
+    width: 54px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    transition-duration: 300ms;
+    font-weight: 600;
+}
+
+#minus_top {
+    transition-property: left, opacity;
+    top: 0;
+    right: 59px;
+}
+
+#minus_left {
+    transition-property: top, opacity;
+    bottom: 59px;
+    left: 0;
+}
+
+#plus_right {
+    top: 59px;
+    right: 0;
+}
+
+#plus_bottom {
+    bottom: 0;
+    left: 59px;
+}
+
+#field {
+    border: 1px solid #48AAE6;
+    padding: 1px;
+}
+
+.cell {
+    height: 54px;
+    width: 54px;
+    background-color: #48AAE6;
+    margin: 1px;
+    display: inline-block;
+}
+
+#plus_bottom:hover, #plus_right:hover {
+    background-color: #F6C052;
+    transition-property: background-color;
+
+}
+
+#minus_left:hover, #minus_top:hover {
+    background-color: #CA4C49;
+    transition-property: background-color;
+}
