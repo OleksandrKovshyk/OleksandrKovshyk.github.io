@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Buttons.css';
 
-const buttons = () => {
+const buttons = (props) => {
 	const dell1 = () => {console.log("del1")};
 	const dell2 = () => {console.log("del2")};
 	const add1 = () => {console.log("add1")};

@@ -4,10 +4,30 @@ import './Field.css';
 import Line from '../line/Line';
 
 class Field extends Component {
+
+	constructor(props) {
+		super(props);
+		this.state = {
+			initialWidth: this.props.initialWidth,
+			initialHeight: this.props.initialHeight,
+			cellSize: this.props.cellSize
+		};
+	}
+
+
 	render(){
 		return(
 			<div id="field">
-				<Line /> <Line /> <Line /> <Line />
+				<Line
+					initialWidth = {this.state.initialWidth}
+					cellSize = {this.state.cellSize}
+
+				/>
+				{console.log(" Field " +
+					"initialWidth: " +
+					this.props.initialWidth +
+					" cellSize: " +
+					this.props.cellSize)}
 			</div>
 		)
 	}
