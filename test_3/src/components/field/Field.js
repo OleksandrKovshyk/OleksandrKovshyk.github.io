@@ -16,12 +16,12 @@ class Field extends Component {
 
 
 	render(){
+
 		return(
 			<div id="field">
 				<Line
 					initialWidth = {this.state.initialWidth}
 					cellSize = {this.state.cellSize}
-
 				/>
 				{console.log(" Field " +
 					"initialWidth: " +

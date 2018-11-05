@@ -5,22 +5,24 @@ import Field from './components/field/Field';
 import Buttons from './components/buttons/Buttons';
 
 class App extends Component {
-	// constructor (props) {
-	// 	super (props);
-	// 	this.state = {
-	// 		initialWidth: this.props.initialWidth,
-	// 		initialHeigh: this.props.initialHeigh,
-	// 		cellSize: this.props.cellSize
-	// 	}
-	// }
+	constructor (props) {
+		super (props);
+		this.state = {
+			initialWidth: this.props.initialWidth,
+			initialHeigh: this.props.initialHeigh,
+			cellSize: this.props.cellSize
+		}
+	}
   render() {
     return (
       <div id="testTask">
-				<Buttons/>
+				<Buttons
+					cellSize = {this.state.cellSize}
+				/>
 				<Field
-					initialWidth = {this.props.initialWidth}
-					initialHeight = {this.props.initialHeight}
-					cellSize = {this.props.cellSize}
+					initialWidth = {this.state.initialWidth}
+					initialHeight = {this.state.initialHeight}
+					cellSize = {this.state.cellSize}
 				/>
       </div>
     )

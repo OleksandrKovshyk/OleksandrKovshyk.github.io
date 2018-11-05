@@ -17,12 +17,12 @@ class Line extends Component {
 		};
 	}
 
-	// const cells = (initialWidth) => {
-	// 	let line = [];
+	// const line = (this.state.initialWidth) => {
+	// 	let cells = [];
 	//
-	// 	for (let i = 0; i < initialWidth)
-	//
-	//
+	// 	for (let i = 0; i < this.state.initialWidth; i++){
+	// 		cells.push(<Cell/>)
+	// 	}
 	//
 	// }
 
@@ -30,7 +30,10 @@ class Line extends Component {
 		return (
 				<div>
 					{/*{this.cells}*/}
-					<Cell/>
+					<Cell
+						cellSize = {this.state.cellSize}
+					/>
+
 					{console.log(" Line " +
 						"initialWidth: " +
 						this.state.initialWidth +
