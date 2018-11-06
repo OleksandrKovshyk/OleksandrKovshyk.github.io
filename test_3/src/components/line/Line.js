@@ -33,6 +33,15 @@ class Line extends Component {
 					<Cell
 						cellSize = {this.state.cellSize}
 					/>
+					<Cell
+						cellSize = {this.state.cellSize}
+					/>
+					<Cell
+						cellSize = {this.state.cellSize}
+					/>
+					<Cell
+						cellSize = {this.state.cellSize}
+					/>
 
 					{console.log(" Line " +
 						"initialWidth: " +

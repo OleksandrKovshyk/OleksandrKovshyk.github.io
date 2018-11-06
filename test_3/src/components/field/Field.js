@@ -23,6 +23,18 @@ class Field extends Component {
 					initialWidth = {this.state.initialWidth}
 					cellSize = {this.state.cellSize}
 				/>
+				<Line
+					initialWidth = {this.state.initialWidth}
+					cellSize = {this.state.cellSize}
+				/>
+				<Line
+					initialWidth = {this.state.initialWidth}
+					cellSize = {this.state.cellSize}
+				/>
+				<Line
+					initialWidth = {this.state.initialWidth}
+					cellSize = {this.state.cellSize}
+				/>
 				{console.log(" Field " +
 					"initialWidth: " +
 					this.props.initialWidth +

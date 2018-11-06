@@ -13,11 +13,22 @@ class App extends Component {
 			cellSize: this.props.cellSize
 		}
 	}
+
   render() {
+
+		const dell1 = () => {console.log("del1")};
+		const dell2 = () => {console.log("del2")};
+		const add1 = () => {console.log("add1")};
+		const add2 = () => {console.log("add2")};
+
     return (
       <div id="testTask">
 				<Buttons
 					cellSize = {this.state.cellSize}
+					dell1 = {dell1}
+					dell2 = {dell2}
+					add1 = {add1}
+					add2 = {add2}
 				/>
 				<Field
 					initialWidth = {this.state.initialWidth}
